@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	This script performs the installation or uninstallation of an application(s).
 .DESCRIPTION
@@ -56,15 +56,15 @@ Try {
 	##* VARIABLE DECLARATION
 	##*===============================================
 	## Variables: Application
-	[string]$appVendor = ''
-	[string]$appName = ''
+	[string]$appVendor = 'Microsoft'
+	[string]$appName = 'Whatever'
 	[string]$appVersion = ''
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
-	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '06/12/2017'
-	[string]$appScriptAuthor = '<author name>'
+	[string]$appScriptVersion = '1.0.1'
+	[string]$appScriptDate = '02/14/2018'
+	[string]$appScriptAuthor = 'Steve Patterson'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -156,6 +156,7 @@ Try {
 
 		## Show Progress Message (with the default message)
 		Show-InstallationProgress
+		## hi
 
 		## <Perform Pre-Uninstallation tasks here>
 
